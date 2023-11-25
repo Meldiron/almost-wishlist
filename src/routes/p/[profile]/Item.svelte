@@ -49,7 +49,7 @@
 		<div class="h-full w-full col-span-4 rounded-3xl">
 			<img
 				class="w-full h-full object-cover rounded-3xl rounded-r-none"
-				src={`https://cloud.appwrite.io/v1/storage/buckets/pictures/files/${item.fileId}/preview?project=almost-wishlist&width=500`}
+				src={`https://cloud.appwrite.io/v1/storage/buckets/pictures/files/${item.fileId}/preview?project=almost-wishlist&width=500&height=500`}
 				alt="Product"
 			/>
 		</div>
