@@ -52,7 +52,7 @@
 		</svg>
 
 		<p class="text-5xl font-bold text-center">Seznam Přání</p>
-		<p class="text-2xl text-blue-600 text-center">Zdílem své přáni s kymkoli.</p>
+		<p class="text-2xl text-blue-600 text-center">Sdílej svá přání s kýmkoli.</p>
 
 		<div class="flex items-center flex-col space-y-3 pt-6 w-full justify-center mx-auto max-w-xl">
 			{#if !isLoggedIn}
