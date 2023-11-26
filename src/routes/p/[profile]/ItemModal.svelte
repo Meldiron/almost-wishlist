@@ -10,7 +10,7 @@
 	let description = item.description ?? '';
 	let url = item.url ?? '';
 	let file: any = null;
-	let id = item.$id ?? uuidv4();
+	let id = item.id ?? uuidv4();
 
 	const dispatch: any = createEventDispatcher();
 
@@ -20,7 +20,8 @@
 			name,
 			description,
 			url,
-			file
+			file: file ? file : undefined,
+			fileId: item.fileId ? item.fileId : undefined
 		});
 	}
 
@@ -78,9 +79,18 @@
 			/>
 
 			<p class="text-lg font-semibold text-gray-800">Fotka:</p>
+			{#if item.fileId}
+				<div class="w-[250px] h-[250px] rounded-md">
+					<img
+						class="w-full h-full object-cover rounded-md"
+						src={`https://cloud.appwrite.io/v1/storage/buckets/pictures/files/${item.fileId}/preview?project=almost-wishlist&width=500&height=500`}
+						alt="Product"
+					/>
+				</div>
+			{/if}
 			<input
 				accept="image/png, image/jpeg"
-				required={true}
+				required={item.fileId ? false : true}
 				on:change={onFile}
 				type="file"
 				class="w-full rounded-2xl px-8 py-3 bg-white border border-gray-300 text-gray-700 font-semibold text-lg"
@@ -90,7 +100,7 @@
 				type="submit"
 				class=" w-full rounded-2xl px-8 py-3 bg-blue-500 text-white font-semibold text-lg"
 			>
-				<p>{item.$id ? 'Uložit' : 'Vytvořit'}</p>
+				<p>{item.id ? 'Uložit' : 'Vytvořit'}</p>
 			</button>
 		</form>
 

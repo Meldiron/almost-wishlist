@@ -57,6 +57,6 @@
 			/>
 		</svg>
 
-		<p class="text-5xl font-bold">{msg}</p>
+		<p class="text-5xl font-bold text-center">{msg}</p>
 	</div>
 </div>

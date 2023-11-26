@@ -93,7 +93,7 @@
 				</div>
 			{/if}
 			{#if msg}
-				<p class="pt-4 text-gray-600">{msg}</p>
+				<p class="pt-4 text-gray-600 text-center">{msg}</p>
 			{/if}
 		</div>
 	</div>
