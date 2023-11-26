@@ -34,8 +34,8 @@
 	}
 </script>
 
-<div class="fixed inset-0 bg-black bg-opacity-50">
-	<div class="mt-12 max-w-xl w-full mx-auto bg-white rounded-3xl p-6">
+<div class="fixed inset-0 bg-black bg-opacity-50 overflow-y-scroll">
+	<div class="my-12 max-w-xl w-full mx-auto bg-white rounded-3xl p-6">
 		<div class="w-full flex items-center justify-between">
 			<h1 class="text-2xl font-bold pb-6">Predmet</h1>
 			<button on:click={onClose} class="p-2 rounded-lg bg-gray-100">
