@@ -4,7 +4,7 @@
 </script>
 
 <div
-	style={`${pallete['700'].border}; ${pallete['500'].bg}`}
+	style={`${pallete['500'].border}; ${pallete['500'].bg}`}
 	class="relative col-span-12 md:col-span-6 bg-white border rounded-3xl w-full grid grid-cols-12"
 >
 	{#if item.fileId}
@@ -27,7 +27,7 @@
 				class="rounded-2xl px-8 py-3 bg-white font-semibold text-lg flex items-center space-x-3"
 				style={`${pallete['600'].text}`}
 			>
-				<p>Kup Mě</p>
+				<p>Odkaz</p>
 
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
